@@ -10,7 +10,7 @@ node {
         def gitTag
 
         stage("Load parameters") {
-            parameters = load('./jenkins/JenkinsParameters.groovy')
+            parameters = load('./JenkinsParameters.groovy')
             gitTag = PROJECT_NAME + "-" + BRANCH_NAME.replace("/", "-") + "-" + BUILD_NUMBER
         }
 
