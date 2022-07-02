@@ -71,9 +71,13 @@ node {
         }
 
         stage("Git tag") {
-            withCredentials([gitUsernamePassword(credentialsId: GIT_CREDENTIALS, gitToolName: 'Default')]) {
-                sh 'git tag ' + gitTag
-                sh 'git push --tags'
+            if (GIT_TAG_REQUIRED) {
+                withCredentials([gitUsernamePassword(credentialsId: GIT_CREDENTIALS, gitToolName: 'Default')]) {
+                    sh 'git tag ' + gitTag
+                    sh 'git push --tags'
+                }
+            } else {
+                echo "Git tag disabled, skipping this stage..."
             }
         }
 
