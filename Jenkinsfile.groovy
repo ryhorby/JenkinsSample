@@ -27,6 +27,7 @@ node {
             //echo 'Tests folder:'
             //sh 'ls -la ../WebApi.Tests/'
             echo '+ 1 folder up:'
+            sh 'pwd'
             sh 'ls -la ../'
             junit '../WebApi.Tests/*.xml'
         }
