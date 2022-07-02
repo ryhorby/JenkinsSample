@@ -23,8 +23,8 @@ node {
         }
 
         stage("Unit tests") {
-            sh 'dotnet test .'
-            //junit 'target/surefire-reports/**/*.xml'
+            sh 'dotnet test --logger "junit;LogFilePath=../WebApi.Tests/results.xml"'
+            junit '../WebApi.Tests/*.xml'
         }
 
         stage("Delete previous deployment") {    
