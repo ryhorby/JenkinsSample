@@ -28,9 +28,9 @@ node {
             //sh 'pwd'
             //sh 'ls -la'
             echo 'WebApi.Tests folder:'
-            sh 'cd WebApi.Tests'
-            sh 'dir'
-            junit '/WebApi.Tests/*.xml'
+            sh 'ls WebApi.Tests/'
+            sh 'pwd'
+            junit 'WebApi.Tests/*.xml'
         }
 
         stage("Delete previous deployment") {    
