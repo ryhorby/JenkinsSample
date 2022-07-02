@@ -2,8 +2,10 @@
 
 ###### Command for tests
 
-// Add packege for logging test result into xml
-dotnet add package JUnitTestLogger --version 1.1.0
+- Add package for logging test result into xml:
 
-//Wil be located into sln folder
-dotnet test --logger "junit;LogFilePath=..\WebApi.Tests\results.xml"
+```dotnet add package JUnitTestLogger --version 1.1.0```
+
+- Will create xml files with logs into "WebApi.Tests" folder
+
+```dotnet test --logger "junit;LogFilePath=..\WebApi.Tests\results.xml"```
