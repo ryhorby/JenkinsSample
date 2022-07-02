@@ -24,12 +24,10 @@ node {
 
         stage("Unit tests") {
             sh 'dotnet test --logger "junit;LogFilePath=results.xml"'
-            //echo 'Tests folder:'
-            //sh 'ls -la ../WebApi.Tests/'
             echo '+ 1 folder up:'
             sh 'pwd'
             sh 'ls -la'
-            junit '*.xml'
+            junit '/WebApi.Tests/*.xml'
         }
 
         stage("Delete previous deployment") {    
