@@ -6,6 +6,7 @@ IS_RELEASE = BRANCH_NAME == 'master'
 
 //Git
 GIT_CREDENTIALS = 'ryhorbygit'
+GIT_TAG_REQUIRED = false
 
 //Docker
 IS_PUSH_ENABLED = true
