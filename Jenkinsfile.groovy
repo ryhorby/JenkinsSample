@@ -24,13 +24,12 @@ node {
 
         stage("Unit tests") {
             sh 'dotnet test --logger "junit;LogFilePath=results.xml"'
-            echo '+ 1 folder up:'
-            sh 'pwd'
-            sh 'ls -la'
+            //echo '+ 1 folder up:'
+            //sh 'pwd'
+            //sh 'ls -la'
             echo 'WebApi.Tests folder:'
             sh 'cd WebApi.Tests'
-            sh 'pwd'
-            sh 'ls -la'
+            sh 'dir'
             junit '/WebApi.Tests/*.xml'
         }
 
