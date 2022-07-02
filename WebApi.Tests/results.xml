@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<testsuites time="0.023" tests="1" failures="0">
-  <testsuite id="0" name="WebApi.Tests.dll" tests="1" failures="0" time="0.023">
-    <testcase classname="WebApi.Tests.MathServiceTests" name="Average_ArrayFrom1To3_2returned" time="0.0229119" />
-  </testsuite>
-</testsuites>

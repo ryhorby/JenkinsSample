@@ -7,12 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Tests", "WebApi.Tests\WebApi.Tests.csproj", "{D2BDE529-F267-48AC-9B37-5983F131E237}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jenkins", "jenkins", "{51BEC785-9D06-4F94-A686-2CD5EDD74C68}"
-	ProjectSection(SolutionItems) = preProject
-		Jenkinsfile.groovy = Jenkinsfile.groovy
-		JenkinsParameters.groovy = JenkinsParameters.groovy
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
